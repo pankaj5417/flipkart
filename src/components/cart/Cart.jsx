@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
-import { addToCart, removeFromCart } from "../../redux/cart/cartActionCreator"
+import { addToCart, addToCartSuccess, getCartData, removeFromCart } from "../../redux/cart/cartActionCreator"
 import { Box, Typography, Button, Grid } from '@mui/material';
 import {  makeStyles } from "@mui/styles";
 
@@ -60,20 +60,41 @@ const useStyle = makeStyles(theme => ({
 
     const classes = useStyle();
 
-    // const cartDetails = useSelector(state => state.cart);
-    // const { cartItems } = cartDetails;
+    
 
    
     
-    // useEffect(() => {
+     useEffect(() => {
     //     if(cartItems && params.id !== cartItems.id)   
-    //         dispatch(addToCart());
+    dispatch(getCartData());
     //     console.log(cartItems);
-    // }, [dispatch, cartItems]);
+}, []);
 
-    const removeItemFromCart = (id) => {
-        dispatch(removeFromCart(id));
+const removeItemFromCart = (id) => {
+    dispatch(removeFromCart(id));
+    postRemovedCartItems()
+      
     }
+    console.log("kartData",data)
+    
+    
+    const postRemovedCartItems=()=>{
+        fetch(`http://localhost:3001/cartData`,{
+            method:"PUT",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(data)
+        })
+        .then(res=>res.json()).then(d=>{
+            
+            console.log("cartDatas3",d);
+            // dispatch(addToCartSuccess(d));
+            // dispatch(getCartData());
+        })
+    }
+    
+   
     const buyNow=()=>{
 
     }
