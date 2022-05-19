@@ -1,0 +1,1 @@
+export const JSON_API='https://flipkart-clone3.herokuapp.com/db'

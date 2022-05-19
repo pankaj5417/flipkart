@@ -9,6 +9,7 @@ import CartItem from "./CartItem";
 import TotalView from "./TotalView";
 import EmptyCart from "./EmptyCart";
 import { useParams } from "react-router-dom";
+import { JSON_API } from "../../url";
 
 const useStyle = makeStyles(theme => ({
   component: {
@@ -79,7 +80,7 @@ const removeItemFromCart = (id) => {
     
     
     const postRemovedCartItems=()=>{
-        fetch(`http://localhost:3001/cartData`,{
+        fetch(`${JSON_API}/cartData`,{
             method:"PUT",
             headers:{
                 "Content-Type":"application/json"
