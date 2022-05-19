@@ -73,19 +73,20 @@ const useStyle = makeStyles(theme => ({
 
 const removeItemFromCart = (id) => {
     dispatch(removeFromCart(id));
-    postRemovedCartItems()
+    postRemovedCartItems(id)
       
     }
     console.log("kartData",data)
     
     
-    const postRemovedCartItems=()=>{
-        fetch(`${JSON_API}/cartData`,{
-            method:"PUT",
-            headers:{
-                "Content-Type":"application/json"
-            },
-            body:JSON.stringify(data)
+    const postRemovedCartItems=(id)=>{
+        fetch(`${JSON_API}/cartData/${id}`,{
+            method:"DELETE",
+            // headers:{
+            //     "Content-Type":"application/json"
+            // },
+
+           
         })
         .then(res=>res.json()).then(d=>{
             
