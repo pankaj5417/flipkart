@@ -51,12 +51,14 @@ const useStyle = makeStyles({
     boxSizing:"border-box"
   },
   image: {
-    width: "250px",
-    height: 320,
-    padding:"3px"
+    width: "220px",
+    height: "250px",
+    padding:"3px",
+    borderRadius:"2px"
+
   },
   wrapper: {
-    padding: "35px 15px",
+    padding: "35px 25px",
   },
   selectBox: {
     width: "97%",
