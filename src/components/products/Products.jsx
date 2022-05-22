@@ -58,7 +58,7 @@ const useStyle = makeStyles({
 
   },
   wrapper: {
-    padding: "35px 25px",
+    padding: "35px 20px",
   },
   selectBox: {
     width: "97%",
