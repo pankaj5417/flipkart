@@ -309,14 +309,14 @@ console.log("productData",data)
           <Grid
             container
             spacing={{ xs: 2, md: 3 }}
-            columns={{ xs: 4, sm: 4, md: 4 }}
-            style={{ gap: "15px" }}
+            columns={{ xs:3, sm: 8, md: 12}}
+            style={{ gap: "10px" }}
           >
             {data?.map((item) => (
               <>
                <Link to={`/products/${item.id}`} style={{textDecoration:"none"}}>
 
-                <Box textAlign="left" className={classes.wrapper}>
+                <Box  textAlign="left" className={classes.wrapper}>
                   <img src={item.url} alt="" className={classes.image} />
                   <Typography
                     className={classes.text}
