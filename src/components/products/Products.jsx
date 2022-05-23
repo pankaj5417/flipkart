@@ -309,7 +309,7 @@ console.log("productData",data)
           <Grid
             container
             spacing={{ xs: 2, md: 3 }}
-            columns={{ xs:3, sm: 8, md: 12}}
+            columns={{ xs:3, sm: 3, md: 3}}
             style={{ gap: "10px" }}
           >
             {data?.map((item) => (
