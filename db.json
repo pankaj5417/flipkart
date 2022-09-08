@@ -467,32 +467,7 @@
       "tagline": "Best Seller"
     }
   ],
-  "cartData": [
-    {
-      "id": "product2",
-      "category": "laptop",
-      "brand": "REALME",
-      "gender": "",
-      "url": "https://rukminim1.flixcart.com/image/832/832/ksez24w0/computer/4/b/s/rmnb1001-thin-and-light-laptop-realme-original-imag5zhg9hggwehv.jpeg?q=70",
-      "url2": "https://rukminim1.flixcart.com/image/832/832/kuwzssw0/computer/o/i/j/rmnb1002-thin-and-light-laptop-realme-original-imag7xdzrygqxndn.jpeg?q=70",
-      "url3": "https://rukminim1.flixcart.com/image/832/832/kuczmvk0/computer/g/3/t/rmnb1001-thin-and-light-laptop-realme-original-imag7gy4hbuvgxfc.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/ksez24w0/computer/h/8/9/rmnb1001-thin-and-light-laptop-realme-original-imag5zhgcstmjbxg.jpeg?q=70",
-      "title": {
-        "shortTitle": "realme Book",
-        "longTitle": "realme Book(Slim) Intel Evo Core i5 11th Gen - (8 GB/512 GB SSD/Windows 10 Home) RMNB1002 Thin and Light Laptop  (14 inch, Real Blue, 1.38 kg, With MS Office)"
-      },
-      "price": {
-        "mrp": 69999,
-        "cost": 59990,
-        "discount": "20%"
-      },
-      "description": "If you are searching for a laptop that can make your gaming experience smooth, then this Alienware laptop will be ideal for you. It comes with the Advanced Alienware Cryo-Tech, so rest assured, the gaming performance offered will be seamless. It is even equipped with an efficient keyboard that can enhance your usage. What’s more, it has a surface coating which keeps it away from stains.",
-      "discount": "Minimum 10% Off",
-      "tagline": "Grab Now!",
-      "rating": 4.4,
-      "reviews": "3,862 Ratings & 554 Reviews"
-    }
-  ],
+  "cartData": [],
   "userDetails": [
     {
       "firstname": "PANKAJ",
